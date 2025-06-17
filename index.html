@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&family=Source+Code+Pro&family=Comic+Neue:wght@400;700&family=Bebas+Neue&family=Press+Start+2P&family=Rubik+Mono+One&family=Fredoka+One&family=Baloo+2:wght@400;700&family=Modak&family=Poppins:wght=400;700&family=Archivo+Black&family=Ultra&family=Syne+Mono&family=Major+Mono+Display&family=Bungee&family=Bungee+Shade&family=Black+Ops+One&family=Abril+Fatface&family=Montserrat:wght@400;700&family=Oswald:wght@400;700&family=Raleway:wght@400;700&family=Quicksand:wght@400;700&family=Pacifico&family=Dancing+Script:wght@400;700&family=Caveat:wght@400;700&family=Kalam:wght@400;700&family=Amatic+SC:wght@400;700&family=Shadows+Into+Light&family=Indie+Flower&family=Special+Elite&family=VT323&family=IBM+Plex+Mono:wght@400;700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;700&family=Fira+Sans:wght@400;400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Merriweather:wght@400;700&family=Libre+Baskerville:wght@400;700&family=DM+Serif+Display&family=Alfa+Slab+One&family=Paytone+One&family=Luckiest+Guy&family=Chewy&family=Sigmar+One&family=Righteous&family=Lobster&family=Patua+One&family=Acme&family=Josefin+Sans:wght@400;700&family=Josefin+Slab:wght@400;700&family=Arvo:wght@400;700&family=Volkhov:wght@400;700&family=Crimson+Text:wght@400;700&family=Cardo:wght@400;700&family=Alegreya:wght@400;700&family=Yeseva+One&family=Philosopher:wght@400;700&family=Prata&family=Cormorant:wght@400;700&family=Unica+One&family=Changa+One&family=Staatliches&family=Knewave&family=Boogaloo&family=Bangers&family=Gloria+Hallelujah&family=Rock+Salt&family=Permanent+Marker&family=Nothing+You+Could+Do&family=Reenie+Beanie&family=Handlee&family=Gochi+Hand&family=Nanum+Pen+Script&family=Homemade+Apple&family=Covered+By+Your+Grace&family=Walter+Turncoat&family=Berkshire+Swash&family=Satisfy&family=Kaushan+Script&family=Marck+Script&family=Yellowtail&family=Great+Vibes&family=Parisienne&family=Qwigley&family=Tangerine:wght@400;700&family=Itim&family=Schoolbell&family=Short+Stack&family=Neucha&family=Annie+Use+Your+Telescope&family=Over+the+Rainbow&family=Sunshiney&family=Love+Ya+Like+A+Sister&family=Kranky&family=Mountains+of+Christmas&family=Butcherman&family=Eater&family=Creepster&family=Frijole&family=Rye&family=Smokum&family=UnifrakturMaguntia&family=Astloch:wght@400;700&family=Emblema+One&family=Faster+One&family=Federo&family=Gravitas+One&family=Monofett&family=Nosifer&family=Plaster&family=Ribeye+Marrow&family=Ribeye&family=Romanesco&family=Ruslan+Display&family=Skranji:wght@400;700&family=Stalinist+One&family=Trade+Winds&family=Underdog&family=Vast+Shadow&family=Vibur&family=Zilla+Slab+Highlight:wght@400;700&family=Fira+Mono:wght@400;700&family=Chivo+Mono:wght@400;700&family=Fragment+Mono&family=Red+Hat+Mono:wght@400;700&family=Share+Tech+Mono&family=Syne+Tactile&family=Tourney:wght@400;700&family=Martian+Mono:wght@400;700&family=JetBrains+Mono:wght@400;700&family=Anonymous+Pro:wght@400;700&display=swap">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#00E8D7">
-    <style>
+        <style>
         :root {
             --primary-color: #FF0055; /* Hot Pink/Red */
             --secondary-color: #00E8D7; /* Electric Cyan */
@@ -964,46 +964,6 @@
         .note.new-note {
             animation: noteAppear 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Springy animation */
         }
-                /* Brutal Footer Styles */
-.footer-credits {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 2px solid var(--primary-color);
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-
-.footer-accent {
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-section {
-        text-align: center;
-    }
-}
-
-.creator-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.2s ease;
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 2px;
-}
-
-.creator-link:hover {
-    color: var(--secondary-color);
-    border-bottom-color: var(--primary-color);
-    text-shadow: 0 0 5px rgba(255, 0, 85, 0.5);
-}
     </style>
 </head>
 <body>
@@ -1046,7 +1006,7 @@
                 </label>
                 <select id="note-priority" class="control-input">
                     <option value="none">NONE</option>
-                    <option value="high">UR</option>
+                    <option value="high">URGENT</option>
                     <option value="medium">MEDIUM</option>
                     <option value="low">LOW</option>
                 </select>
@@ -1080,12 +1040,6 @@
         </div>
     </div>
 
-    <footer>
-    <div class="footer-credits">
-        <p>/// MADE WITH <span class= "footer-accent">BRUTAL INTENT</span> BY <a href="https://wa.me/+918777845713" class="creator-link">SHOVITH</a> ///</p>
-    </div>
-    </footer>
-    
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
     <script>
@@ -1625,7 +1579,7 @@
 
                         noteElement.innerHTML = `
                             <div class="tape"></div>
-                            <h3 class="note-header" contenteditable="true">${note.title}</h3>
+                            
                             <div class="format-controls">
                                 <button class="format-btn" data-command="bold" title="BOLD"><i class="fas fa-bold"></i></button>
                                 <button class="format-btn" data-command="italic" title="ITALIC"><i class="fas fa-italic"></i></button>
@@ -1784,6 +1738,7 @@
                                     <div class="font-option font-anonymous" data-font="'Anonymous Pro', monospace" data-font-name="Anonymous">Anonymous</div>
                                 </div>
                             </div>
+                            <h3 class="note-header" contenteditable="true">${note.title}</h3>
                             <div class="note-content" contenteditable="true" style="font-size: ${note.fontSize}px; font-family: ${note.fontFamily}">${note.content}</div>
                             <div class="note-tags"></div>
                             <div class="note-footer">
